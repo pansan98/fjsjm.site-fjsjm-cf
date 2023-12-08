@@ -34,7 +34,7 @@ fields階層にあるファイルは投稿タイプやカスタム投稿タイ�
 ## 公開画面への反映
 Frontクラスを使って公開画面へ反映します。Frontクラスは「FjsjmCfFront」でクラスをエイリアス化しているため、呼び出す場合は以下のように記述します。
 
-`$block = FjsjmCfFront::get()->get_block(get_the_ID(), public_key);
-$block->render();`
+    $block = FjsjmCfFront::get()->get_block(get_the_ID(), public_key);
+    $block->render();
 
 public_keyには管理画面で表示されている公開キーを入力してください。
